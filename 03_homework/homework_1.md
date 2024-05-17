@@ -76,3 +76,7 @@ Please do not pick the exact same tables that I have already diagramed. For exam
 	-  ![01_farmers_market_conceptual_model.png](./images/01_farmers_market_conceptual_model.png)
 - The column names can be found in a few spots (DB Schema window in the bottom right, the Database Structure tab in the main window by expanding each table entry, at the top of the Browse Data tab in the main window)
 
+
+Please see the link to the ERD Model: https://lucid.app/lucidchart/ff1eb814-cf9e-446d-8846-cd1c3f2b87c3/edit?viewport_loc=-2374%2C210%2C2774%2C1248%2C0_0&invitationId=inv_b769b50d-f83f-4cdd-9a77-301b1d52ac21
+
+
