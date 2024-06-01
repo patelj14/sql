@@ -5,6 +5,8 @@ Create a logical model for a small bookstore. 📚
 
 At the minimum it should have employee, order, sales, customer, and book entities (tables). Determine sensible column and table design based on what you know about these concepts. Keep it simple, but work out sensible relationships to keep tables reasonably sized. Include a date table. There are several tools online you can use, I'd recommend [_Draw.io_](https://www.drawio.com/) or [_LucidChart_](https://www.lucidchart.com/pages/).
 
+https://lucid.app/lucidchart/fdff1f9d-dab1-46a8-a656-9f55a071cb75/edit?viewport_loc=-875%2C814%2C2749%2C1248%2C0_0&invitationId=inv_70d02519-5b9d-4681-8ed5-a90d6cd47880
+
 ## Question 2
 We want to create employee shifts, splitting up the day into morning and evening. Add this to the ERD.
 
@@ -15,7 +17,11 @@ _Hint, search type 1 vs type 2 slowly changing dimensions._
 
 Bonus: Are there privacy implications to this, why or why not?
 ```
-Your answer...
+Type 1 slowly changing dimension is a method that overwrites the existing values with new values and does not retain the history of the data.
+Type 2 slowly changing dimension is a method that adds rows for the new value and maintains the existing rows of old data.
+
+Yes, there are privacy impllications to our decision of chosing type 1 vs type 2. If we elect to choose type 2, there is a potential for knowing more data about an individual affiliation and housing situtaion. You can also derive demographics and likelihood of certain elements based on location data. 
+
 ```
 
 ## Question 4
@@ -23,7 +29,7 @@ Review the AdventureWorks Schema [here](https://i.stack.imgur.com/LMu4W.gif)
 
 Highlight at least two differences between it and your ERD. Would you change anything in yours?
 ```
-Your answer...
+The AdventureWorks Schema seems very thought out and well planned. They separated each of their tables into larger categories such as Person, Production, Purchasing, Sales, etc. In addition, the schema contains a dbo section to include information about the database itself such as an error log, databaselog, and awbuildversion. In order to make my Schema better, i would categorize my tables into sections and add additional high level sections such as HR and dbo.
 ```
 
 # Criteria
